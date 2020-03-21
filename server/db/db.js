@@ -3,13 +3,21 @@ const pkg = require('../../package.json')
 
 const databaseName = pkg.name;
 
-const db = new Sequelize(
-  process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`,
-  {
-    logging: false
+function initDb() {
+  try {
+    return new Sequelize(
+      process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`,
+      {
+        logging: false
+      }
+    ) 
+  } catch (err) {
+    console.log('Db creation failed');
+    console.error(err.message);
   }
-)
-module.exports = db
+}
+
+module.exports = initDb();
 
 // This is a global Mocha hook used for resource cleanup.
 // Otherwise, Mocha v4+ does not exit after tests.
