@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
-import {Button, Icon} from 'semantic-ui-react'
 import NavCart from './NavCart'
 import GuestNavCart from './GuestNavCart'
 
@@ -11,7 +10,7 @@ const Navbar = ({handleClick, isLoggedIn, currentUserId}) => (
   <div>
     <nav className="nav-container">
       <Link to="/home">
-        <h2 className="logo-text">livestockr</h2>
+        <h2 className="logo-text">savasana</h2>
       </Link>
       <div className="right-aligned-navbar">
         {isLoggedIn ? (

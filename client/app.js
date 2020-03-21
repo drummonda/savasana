@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './components/navbar'
 import Routes from './routes'
-import ProductList from './components/Cards/ProductList'
 
 const App = () => {
   return (

@@ -1,28 +1,17 @@
 const User = require('./user');
-const Animal = require('./animal');
-const CartItem = require('./cartItem');
-const OrderItem = require('./orderItem');
-const Order = require('./order')
+const Studio = require('./studio');
+const Teacher = require('./teacher');
+const Class = require('./class');
 
-CartItem.belongsTo(User);
-User.hasMany(CartItem);
+Teacher.belongsTo(Studio);
+Studio.hasMany(Teacher);
 
-CartItem.belongsTo(Animal);
-Animal.hasMany(CartItem);
-
-OrderItem.belongsTo(Animal);
-Animal.hasMany(OrderItem);
-
-OrderItem.belongsTo(Order);
-Order.hasMany(OrderItem);
-
-Order.belongsTo(User);
-User.hasMany(Order);
+Class.belongsTo(Teacher);
+Teacher.hasMany(Class);
 
  module.exports = {
   User,
-  Animal,
-  CartItem,
-  OrderItem,
-  Order
+  Studio,
+  Teacher,
+  Class
 };
