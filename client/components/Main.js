@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import WelcomeCard from './Cards/WelcomeCard'
-import ProductList from './Cards/ProductList'
+import StudioList from './StudioList'
 import {Button} from 'semantic-ui-react'
 import {Login, Signup} from './auth-form'
 
@@ -29,7 +29,7 @@ export default class Main extends Component {
 
     return (
       <div className="app-container">
-        <ProductList />
+        <StudioList />
 
         {showRegisterModal && (
           <WelcomeCard>

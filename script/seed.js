@@ -44,12 +44,14 @@ async function seed() {
     Studio.create({
       name: "Yoga Source",
       description: "Tacos stumptown bicycle rights forage iPhone, put a bird on it hella shabby chic keffiyeh celiac. Keytar flannel synth, whatever kickstarter vexillologist wolf adaptogen. Scenester kogi green juice, leggings chicharrones tousled meggings offal microdosing helvetica gastropub fanny pack cloud bread. Af shoreditch DIY, adaptogen umami snackwave distillery heirloom tote bag photo booth viral shabby chic.",
-      location: "Richmond, Virginia"
+      location: "Richmond, Virginia",
+      imageUrl: "https://static.wixstatic.com/media/bfd771_54ff42c2b3f64108bede2908722704a5~mv2_d_5833_2500_s_4_2.png/v1/fill/w_548,h_226,al_c,q_85,usm_0.66_1.00_0.01/largerlogo-700by300.webp"
     }),
     Studio.create({
-      species: "Hot Yoga Richmond",
+      name: "Hot Yoga Richmond",
       description: "Semiotics enamel pin mustache blog, migas ramps fam. Tbh green juice etsy cloud bread roof party, vinyl skateboard selvage iceland. Scenester kale chips brooklyn lyft, four loko YOLO food truck williamsburg mlkshk swag snackwave gluten-free tacos. Intelligentsia VHS hella pok pok man bun you probably haven't heard of them try-hard locavore occupy thundercats post-ironic enamel pin chia. Meh bitters selvage raclette cliche stumptown iceland echo park poutine tumeric.",
       location: "Richmond, Virginia",
+      imageUrl: "https://images.squarespace-cdn.com/content/v1/5a565b0ee45a7ca343e46284/1534909464895-LV9TMHL1R3AWAHFFMCAM/ke17ZwdGBToddI8pDm48kHqyDplP6eU-Khv-cERnCxxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzCmUAGlMtuLepsF0YHzGvqUnPZQHoQG1JuaHXn2O6I92yK41iQ6FQ-SW3-WuQ_IYE/HYRNEWLOGO.png"
     })
   ])
   // Wowzers! We can even `await` on the right-hand side of the assignment operator

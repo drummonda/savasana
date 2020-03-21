@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
-import NavCart from './NavCart'
-import GuestNavCart from './GuestNavCart'
 
 const Navbar = ({handleClick, isLoggedIn, currentUserId}) => (
   <div>
@@ -17,19 +15,17 @@ const Navbar = ({handleClick, isLoggedIn, currentUserId}) => (
           <React.Fragment>
             {/* The navbar will show these links after you log in */}
             <Link to="/home">Home</Link>
-            <Link to={`/users/${currentUserId}`}>View Profile</Link>
+            {/* <Link to={`/users/${currentUserId}`}>View Profile</Link>
             <a href="#" onClick={handleClick}>
               Logout
-            </a>
-            <NavCart />
+            </a> */}
           </React.Fragment>
         ) : (
           <React.Fragment>
             {/* The navbar will show these links before you log in */}
             <Link to="/home">Home</Link>
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign Up</Link>
-            <GuestNavCart />
+            {/* <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link> */}
           </React.Fragment>
         )}
       </div>

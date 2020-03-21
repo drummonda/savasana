@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {editUser, fetchUser} from '../store/user'
-import {modal} from '../store/forms'
 import {Button} from 'semantic-ui-react'
 
 class EditProfileForm extends Component {

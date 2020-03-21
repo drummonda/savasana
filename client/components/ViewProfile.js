@@ -1,11 +1,8 @@
 import React, {Component} from 'react'
 import {Button, Icon, Modal} from 'semantic-ui-react'
 import {fetchUser, editUser, deleteUserProfile} from '../store/user'
-import {getOrderHistory} from '../store/order'
 import {connect} from 'react-redux'
 import EditProfileForm from './EditProfileForm'
-import {modal} from '../store/forms'
-import OrderHistoryCard from './Cards/OrderHistoryCard'
 
 class ViewProfile extends Component {
   componentDidMount() {

@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -28,6 +29,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new Dotenv()
-  ]
+    new Dotenv(),
+  ],
+  watch: true,
 }

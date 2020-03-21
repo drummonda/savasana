@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
-import ProductList from './components/Cards/ProductList'
+import StudioList from './components/StudioList'
 import PropTypes from 'prop-types'
 import {me} from './store'
 import ViewProfile from './components/ViewProfile'
@@ -23,15 +23,15 @@ class Routes extends Component {
         <Switch>
           {/* Routes placed here are available to all visitors */}
           <Route exact path="/" component={Main} />
-          <Route exact path="/home" component={ProductList} />
+          <Route exact path="/home" component={StudioList} />
           {/* <Route exact path="/login" component={Login} /> */}
           {/* <Route exact path="/signup" component={Signup} /> */}
         </Switch>
         :
         <Switch>
           {/* Routes placed here are only available after logging in */}
-          <Route exact path="/" component={ProductList} />
-          <Route exact path="/home" component={ProductList} />
+          <Route exact path="/" component={StudioList} />
+          <Route exact path="/home" component={StudioList} />
           <Route path="/users/:userId" component={ViewProfile} />
         </Switch>
       }
