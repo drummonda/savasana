@@ -34,7 +34,7 @@
   "author": "Andrew Drummond",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "compression": "^1.7.1",
     "connect-session-sequelize": "^4.1.0",
     "dotenv-webpack": "^1.5.7",
